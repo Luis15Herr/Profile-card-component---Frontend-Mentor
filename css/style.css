@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #19a2ae;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.top-img {
+  position: absolute;
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
+  top: 0;
+  left: 0;
+}
+
+.bottom-img {
+  position: absolute;
+  -webkit-transform: translate(25%, 60%);
+          transform: translate(25%, 60%);
+  bottom: 0;
+  right: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.profile-card {
+  height: 375px;
+  width: 350px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(10px 10px 10px #00000033);
+          filter: drop-shadow(10px 10px 10px #00000033);
+  position: relative;
+}
+
+.profile-card .profile-banner {
+  height: 140px;
+  background-image: url("/images/bg-pattern-card.svg");
+  width: 100%;
+}
+
+.profile-card .profile-info {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+.profile-card .profile-info .profile-img {
+  background-image: url("/images/image-victor.jpg");
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid white;
+}
+
+.profile-card .profile-info .info {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.profile-card .profile-info .info .name {
+  height: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-card .profile-info .info .name .age {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.profile-card .profile-info .info .location {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 14px;
+}
+
+.profile-card .profile-stats {
+  width: 100%;
+  border-top: 1px solid #9696964f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.profile-card .profile-stats .stats {
+  text-align: center;
+  padding: 0 25px;
+}
+
+.profile-card .profile-stats .stats .data {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  color: #2d3248;
+  margin-bottom: 5px;
+}
+
+.profile-card .profile-stats .stats .title {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-card {
+    width: 85%;
+  }
+  .top-img {
+    -webkit-transform: translate(-60%, -50%);
+            transform: translate(-60%, -50%);
+    height: 600px;
+  }
+  .top-img img {
+    height: 80vh;
+  }
+  .bottom-img {
+    -webkit-transform: translate(60%, 50%);
+            transform: translate(60%, 50%);
+    height: 600px;
+  }
+  .bottom-img img {
+    height: 80vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
